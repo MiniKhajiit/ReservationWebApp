@@ -1,0 +1,31 @@
+label.create-user-label {
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+.create-user-input {
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input.create-user-input:focus {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    border: 2.5px solid black;
+    padding: 5px;
+}
+
+input.is-danger {
+    border: 2px solid red;
+    border-radius: 4px
+}
+
+p.is-danger {
+    color: red;
+}
+
+button.create-user-button {
+    border-width: 2px;
+    font-weight: bold; 
+}

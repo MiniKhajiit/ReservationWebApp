@@ -1,0 +1,219 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+.brand-container {
+    display: flex;
+}
+.navi-brand {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    margin-left: 5vh;
+    margin-right: auto;
+    text-align: left;
+    color: #efefef;
+    justify-content: center;
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 10px;
+    background:rgb(0, 0, 0);
+    align-self: start;
+}
+.brand-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1.navi-name, p.navi-user {
+    margin-bottom: 0;
+}
+p.navi-user {
+    -webkit-text-stroke: .3px red;
+}
+.ig-link {
+    color: #efefef;
+    -webkit-text-stroke: .3px red;
+    text-decoration: none;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.ig-link:hover {
+    color: white;
+    -webkit-text-stroke-color: white;
+    background-color: red;
+    border-radius: 5px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.ig-link:active {
+    color: white;
+    -webkit-text-stroke-color: white;
+    background-color: red;
+    border-radius: 5px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.links-container {
+    display: flex;
+}
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.navi-links {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.navi-btns {
+    align-self: center;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+.navBtn {
+    margin-right: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #efefef;
+    background:rgb(0, 0, 0);
+    border: rgb(255, 255, 255) solid 2px;
+    cursor: pointer;
+}
+
+.navBtn:hover {
+    background-color: rgb(177, 177, 177);
+    border: rgb(0, 0, 0) solid 2px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.icon {
+    display: none;
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    padding: 5px;
+    color: #efefef;
+    background: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.login-icon {
+    display: none;
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    padding: 5px;
+    color: #efefef;
+    background: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 550px){
+    nav {
+        flex-direction: column;
+        justify-content: left;
+    }
+    .navi-brand {
+        margin-left: 3vh;
+        align-self: start;
+    }
+    .links-container {
+        justify-content: end;
+    }
+    .navi-links {
+        align-self: start;
+        position: relative;
+        height: auto;
+    }
+    .navi-btns {
+        list-style-type: none;
+        flex-direction: row;
+        height: auto;
+        align-items: start;
+        flex-wrap: wrap-reverse;
+    }
+    .navBtn {
+        margin-right: 0;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #efefef;
+        background:rgb(0, 0, 0);
+        border: rgb(255, 255, 255) solid 2px;
+        cursor: pointer;
+    }
+
+    .navBtn:hover {
+        background-color: rgb(177, 177, 177);
+        border: rgb(0, 0, 0) solid 2px;
+        color: rgb(0, 0, 0);
+    }
+    .btns {
+        text-align: right;
+        margin-right: 0px;
+        margin-top: 5px;
+        border-top: 1px solid rgba(122, 122, 122, 0.555);
+        border-bottom: 1px solid rgba(122, 122, 122, 0.555);
+        padding: 0;
+    }
+    .icon {
+        display: block;
+        right: 2vw;
+        top: 5vw;
+        padding: 5px;
+        font-size: 28px;
+    }
+    .login-icon {
+        display: block;
+        right: 2vw;
+        top: 5vw;
+        padding: 5px;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 551px){
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navi-brand {
+        margin-left: 5vh;
+        align-self: start;
+    }
+    .navi-links {
+        position: relative;
+        height: auto;
+    }
+    .navi-btns {
+        margin-top: 5vh;
+        flex-direction: column;
+        height: auto;
+        align-items: end;
+    }
+    .btns:nth-child(1){
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+    }
+    .btns {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: right;
+        margin-right: 0px;
+        padding: 0;
+    }
+    .icon {
+        display: block;
+    }
+    .login-icon {
+        display: block;
+    }
+}

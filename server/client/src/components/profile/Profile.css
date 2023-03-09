@@ -1,0 +1,63 @@
+.modal-header {
+    display: flex;
+}
+
+.modal-title {
+    border: 1px solid red;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-right: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+.ProfileEditContainer {
+    transform: scale(.9);
+    display: flex;
+    justify-self: end;
+}
+
+.ProfileEditContainer:active {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 0.5rem;
+
+}
+
+button.model-button {
+    padding-right: 15vh;
+    border-radius: 3px;
+}
+
+.tippy-box[data-theme~='cedarF-theme'] {
+    background-color: rgb(25, 25, 25);
+    color: rgb(130, 225, 230);
+}
+
+label.pe-label {
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+.create-user-input {
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input.pe-input:focus {
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    border: 2.5px solid black;
+    padding: 5px;
+}
+
+input.is-danger {
+    border: 2px solid red;
+    border-radius: 4px
+}
+
+p.is-danger {
+    color: red;
+}

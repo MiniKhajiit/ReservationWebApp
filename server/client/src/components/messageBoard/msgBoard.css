@@ -1,0 +1,79 @@
+.msgList {
+    padding-top: 5vh;
+}
+
+.msg-author {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 25px;
+    padding-right: 10px;
+    border-right: rgb(70, 70, 70) solid 3px;
+}
+
+.msg-container {
+    display: flex;
+    border: rgb(70, 70, 70) solid 5px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    min-height:10vh;
+}
+
+.pagination-container {
+    justify-content: center;
+}
+
+.msg-author-p {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.msg-message {
+    display: flex;
+}
+
+.msg-message-p {
+    display: flex;
+    align-self: center;
+    margin-bottom: 0;
+    margin: 10px
+}
+
+.page-link {
+    color: red;
+}
+.page-link:hover {
+    color: rgb(153, 0, 0);
+}
+.page-link:active {
+    background-color: red;
+}
+.page-item:active {
+    background-color: red;
+}
+
+.active>.page-link {
+    background-color: red;
+    border-color: red;
+}
+
+.pagination-container {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+@media only screen and (max-width: 550px){
+    .msg-container {
+        flex-direction: column;
+    }
+    .msg-author {
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+        border-bottom: rgb(70, 70, 70) solid 3px;
+    }
+    .pagination-container {
+        margin-top: 1vh;
+    }
+}

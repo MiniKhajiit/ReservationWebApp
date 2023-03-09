@@ -1,0 +1,128 @@
+.nav-link {
+    color: red;
+}
+.nav-link:hover {
+    color: black;
+}
+
+a.welcome-ig-link {
+    color: red;
+    text-decoration: none;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+a.welcome-ig-link:hover {
+    color: white;
+    -webkit-text-stroke-color: white;
+    background-color: red;
+    border-radius: 5px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+a.welcome-ig-link:active {
+    color: white;
+    -webkit-text-stroke-color: white;
+    background-color: red;
+    border-radius: 5px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.UserList-container {
+    display: flex;
+    justify-content: center;
+}
+.UserList-toolbar {
+    display: flex;
+}
+.Table-container {
+    display: flex;
+}
+table.user-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+tr.user-table-head {
+    border: 1px solid black;
+}
+th.user-name-head-col, th.user-email-head-col, th.user-phone-head-col {
+    letter-spacing: 3px;
+    text-align: center;
+}
+tr.user-table-row {
+    border: 1px solid black;
+}
+td.user-table-name-col, td.user-table-email-col, td.user-table-phone-col {
+    border: 1px solid black;
+    padding: 10px;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+td.user-table-email-col {
+    font-size: 1.5vh;
+}
+
+@media screen and (max-width: 550px) {
+    td.user-table-name-col, td.user-table-email-col, td.user-table-phone-col {
+        font-size: 12px;
+    }
+    td.user-table-email-col {
+        font-size: 11px;
+    }
+    th.user-name-head-col {
+        width:25%;
+    }
+    th.user-phone-head-col {
+        width: 25%;
+    }
+    td.user-table-email-col {
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 551px){
+    table.user-table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid black;
+    }
+    tr.user-table-head {
+        border: 1px solid black;
+    }
+    th.user-name-head-col {
+        width: 30%;
+    }
+    th.user-email-head-col {
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    th.user-phone-head-col {
+        width: 25%;
+    }
+    tr.user-table-row {
+        border: 1px solid black;
+    }
+    td.user-table-name-col {
+        border: 1px solid black;
+        padding: 5px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    td.user-table-email-col {
+        border: 1px solid black;
+        padding: 10px;
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+    td.user-table-phone-col {
+        border: 1px solid black;
+        padding: 5px;
+        letter-spacing: none;
+        font-size: 14px;
+    }
+}

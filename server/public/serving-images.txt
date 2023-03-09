@@ -1,0 +1,4 @@
+Saving images in a db table is bad practice,
+i will need to create a serving static file system
+towards all of the point in the website
+that utilize the profile pictures

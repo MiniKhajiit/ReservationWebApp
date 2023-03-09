@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.App-row {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 1vw;
+  height: 89.5vh;
+}
+
+.calendar-container, .msgBoard-container {
+  background: #ffffff;
+  margin: 1vw;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1235px){
+  .App-row{
+    flex-direction: column;
+  }
+}
